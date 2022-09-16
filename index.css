@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family:cursive;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    color: rgb(142, 142, 142);
+}
+
+.password{
+    padding: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(142, 142, 142);
+    background-color: rgb(31, 31, 31);
+}
+
+.copy {
+    color: rgb(157, 241, 154);
+    cursor: pointer;
+}
+.copy:hover{
+    color: rgb(210, 252, 209);
+}
+
+.lenValue {
+    margin-left: 220px;
+    color: rgb(157, 241, 154);
+}
+
+.form{
+    width: 420px;
+    background-color: rgb(31, 31, 31);
+}
+
+form{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin: 10px;
+}
+
+.length {
+    -webkit-appearance: none;
+    background-color: black;
+    border-radius: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.length::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+}
+
+.strength {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 15px;
+    background-color: black;
+    color: rgb(142, 142, 142);
+}
+
+.strengthValue {
+    display: flex;
+}
+
+.poor, .weak, .good, .excellent{
+    margin-left: 5px;
+    border: 1px solid white;
+    width: 7px;
+    height: 23px;
+}
+
+.button{
+    margin: 0 20px 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    font-weight: 700;
+    background-color:rgb(157, 241, 154);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(184, 235, 182);
+}

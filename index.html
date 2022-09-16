@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="box">
+        <h4>Password Generator</h4>
+
+        <p class="password"><span id="password">P4$5W0rD!</span> <span class="copy">Copy</span></p>
+        <div class="form">
+            <form action="">
+                <label class="charLength">character Length <span class="lenValue" id="lenValue">4</span></label>
+                <input type="range" class="length" value="4" min="4" max="12" oninput="raise(this.value)" >
+                <label><input type="checkbox" id="upper" onclick="upperfun()" class="upper">Include Uppercase Letters</label>
+                <label><input type="checkbox" id="lower" onclick="lowerfun()" class="lower">Include Lowercase Letters</label>
+                <label><input type="checkbox" id="num" onclick="numfun()" class="num">Include Numbers</label>
+                <label><input type="checkbox" id="sym" onclick="symfun()" class="sym">Include Symbols</label>
+                <label class="strength">STRENGTH 
+                    <div class="strengthValue">
+                        <div id="poor" class="poor"></div>
+                        <div id="weak" class="weak"></div>
+                        <div id="good" class="good"></div>
+                        <div id="excellent" class="excellent"></div>
+                    </div>
+                </label>
+                <input type="button" class="button" onclick="generate()" value="GENERATE">
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
